@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_room"
+        android:icon="@drawable/livingroom"
+        android:title="Rooms"/>
+
+
+    <item android:id="@+id/nav_flat"
+        android:icon="@drawable/building"
+        android:title="Flats"/>
+</menu>

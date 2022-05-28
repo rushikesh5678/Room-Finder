@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/detail_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detail_toolbar"
+        app:cardBackgroundColor="#ffffff"
+        android:layout_margin="5dp"
+        android:id="@+id/pgdetailcardview"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/pgimages"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:id="@+id/dpgname"
+                        android:hint="P.G Name"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                    <TextView
+                        android:textColor="#10B117"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text=""
+                        android:id="@+id/dpgprice"
+                        android:hint="P.G Price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:id="@+id/dpgdesc"
+                    android:hint="P.G Detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:text=""
+                    android:id="@+id/dpgroomtype"
+                    android:hint="P.G Room Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="#F44336"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:text="Pune"
+                        android:hint="city"
+                        android:id="@+id/dpgcity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="5dp"
+                        />
+
+                    <TextView
+                        android:textColor="#F44336"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:text="Occupancy"
+                        android:hint=" Single"
+                        android:id="@+id/dpgoccu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        />
+
+                    <TextView
+                        android:textColor="#F44336"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:text="pg for"
+                        android:hint=" Girl"
+                        android:id="@+id/dpgfor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:text=""
+                    android:id="@+id/dpgfoodinc"
+                    android:hint="P.G Food Available"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:text=""
+                    android:id="@+id/dpgadds"
+                    android:hint="P.G Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:textColor="#0B0A0C"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:text=""
+                    android:id="@+id/dpgphone"
+                    android:hint="P.G Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:text=""
+                    android:id="@+id/dpgavail"
+                    android:hint="P.G Availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:textColor="#0B0A0C"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:id="@+id/dpgadlink"
+                    android:hint="P.G Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Services"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    ></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_baseline_wifi_24"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dwifi"
+                            android:textSize="14dp"
+                            android:hint="Available"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_baseline_lightbulb_24"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dpower"
+                            android:textSize="14dp"
+                            android:hint="Available"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_baseline_local_parking_24"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dparking"
+                            android:textSize="14dp"
+                            android:hint="Available"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_baseline_tv_24"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dtv"
+                            android:textSize="14dp"
+                            android:hint="Available"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_baseline_cleaning_services_24"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dclean"
+                            android:textSize="14dp"
+                            android:hint="Available"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/party"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dparty"
+                            android:textSize="14dp"
+                            android:hint="Available"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact P.G Owner"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:padding="10dp"
+                        android:background="@drawable/btn_design_myaccount"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/location"
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call"
+                        android:padding="10dp"
+                        android:background="@drawable/btn_design_myaccount"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/call"
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Whatsapp"
+                        android:padding="5dp"
+                        android:background="@drawable/btn_design_myaccount"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/whatsapp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/colorWhite"
+        android:background="#1B536D" />
+
+    <ImageView
+        android:id="@+id/iv_pgImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolBarUpload"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_add_photo_24" />
+
+    <ScrollView
+        android:id="@+id/scrollUpload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_pgImage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/txt_pg_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="PG Name"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/txt_pg_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="PG Description"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/txt11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="P.G Type"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/pg_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/pgtype" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Select City"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/pg_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/locations" />
+
+            <EditText
+                android:id="@+id/txt_pg_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="PG Price"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Occupancy Type"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/pg_occupancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/occupancy" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="PG for"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/pg_for"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/pgfor" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Food included"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/pg_foodinclude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/foodinclude" />
+
+            <TextView
+                android:id="@+id/txt12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="P.G Availability:"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <Spinner
+                android:id="@+id/pg_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:entries="@array/pgavailable" />
+
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Choose Services"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/wifis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wifi" />
+
+                <CheckBox
+                    android:id="@+id/parkings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parking" />
+
+                <CheckBox
+                    android:id="@+id/rooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room Clean" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/powers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power Backup"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/tvs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TV" />
+
+                <CheckBox
+                    android:id="@+id/partys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="party" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pgaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="PG Address"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnaddresfetch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="8dp"
+                android:text="Get Current Location"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/adlinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/adminid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/adminshop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/adminname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/adminphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/selectImage"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_design_myaccount"
+                android:text="Select Image"
+                android:textColor="#ffffff"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/uploadPGInfo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_design_myaccount"
+                android:text="Upload PG Info"
+                android:textColor="#ffffff"
+                android:textSize="22dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

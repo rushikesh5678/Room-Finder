@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#ffffff"
+    android:layout_margin="5dp"
+    android:id="@+id/pgcardview2"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imvpg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.8"
+            android:src="@drawable/icecream"
+            />
+
+
+        <TextView
+            android:textColor="#9C27B0"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text=""
+            android:id="@+id/cpgname"
+            android:hint="P.G Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#F44336"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:text="Pune"
+                android:hint="city"
+                android:id="@+id/cpgcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:textColor="#F44336"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:text="Occupancy"
+                android:hint=" Single"
+                android:id="@+id/cpgoccu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:textColor="#F44336"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:text="pg for"
+                android:hint=" Girl"
+                android:id="@+id/cpgfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#0AA311"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text=""
+            android:hint="Price"
+            android:id="@+id/cpgprice"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#0E0E0E"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:text=""
+            android:hint="pg desc"
+            android:id="@+id/cpgdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:textColor="#0E0E0E"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:text=""
+            android:hint="a name"
+            android:id="@+id/caname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:textColor="#0E0E0E"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:text=""
+            android:hint="a phone"
+            android:id="@+id/caphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:textColor="#0E0E0E"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:text=""
+            android:hint="a pg"
+            android:id="@+id/capg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:textColor="#1BA321"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text=""
+            android:hint="cakey"
+            android:id="@+id/cakey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgadlink"
+            android:hint="pg ads link"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgads"
+            android:hint="pg ads"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgfoodinclude"
+            android:hint="pg food include"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgavail"
+            android:hint="pg Available"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgroomtypes"
+            android:hint="pg Room Types"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgwifi"
+            android:hint="pg wifi"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgpower"
+            android:hint="pg power"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgclean"
+            android:hint="pg clean"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgparking"
+            android:hint="pg parking"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgtvs"
+            android:hint="pg tvs"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cpgparty"
+            android:hint="pg party"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
