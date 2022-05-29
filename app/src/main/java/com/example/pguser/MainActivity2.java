@@ -27,6 +27,7 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
     BottomNavigationView bnav;
     public static Context contextOfApplication;
 
+
     public static Context getContextOfApplication() {
         return contextOfApplication;
     }
