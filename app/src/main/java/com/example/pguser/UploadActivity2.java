@@ -213,7 +213,6 @@ public class UploadActivity2 extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
 
