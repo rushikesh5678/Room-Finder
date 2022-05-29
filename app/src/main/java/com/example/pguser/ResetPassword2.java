@@ -57,6 +57,7 @@ public class ResetPassword2 extends AppCompatActivity {
                             else
                             {
                                 String msg = task.getException().getMessage();
+
                                 Toast.makeText(ResetPassword2.this, "Error Occurred"+msg, Toast.LENGTH_SHORT).show();
                                 progressDialog.dismiss();
                             }
