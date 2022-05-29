@@ -35,7 +35,6 @@ public class ProfileFragment2 extends Fragment {
     FirebaseAuth firebaseAuth;
     CircleImageView profileimgview;
     Button profile;
-
     ProgressDialog progressDialog;
 
     FirebaseDatabase firebaseDatabase;
