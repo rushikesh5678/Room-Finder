@@ -33,6 +33,7 @@ class PGViewHolder2 extends RecyclerView.ViewHolder{
         // Card View
 
         pg_card = itemView.findViewById(R.id.pgcardview2);
+
         pg_image = itemView.findViewById(R.id.imvpg);
         pg_name = itemView.findViewById(R.id.cpgname);
         pg_price = itemView.findViewById(R.id.cpgprice);
