@@ -40,7 +40,6 @@ public class BRoomFragment extends Fragment {
     FirebaseDatabase database;
     DatabaseReference myRef, myref2;
 
-
     public BRoomFragment() {
         // Required empty public constructor
     }
