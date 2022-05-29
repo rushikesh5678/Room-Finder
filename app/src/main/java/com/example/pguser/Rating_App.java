@@ -46,6 +46,7 @@ public class Rating_App extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
                 finish();
+
             }
 
         });
