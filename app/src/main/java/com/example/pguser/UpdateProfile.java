@@ -70,6 +70,7 @@ public class UpdateProfile extends AppCompatActivity {
             @Override
             public void onCancelled( DatabaseError databaseError) {
 
+
                 Toast.makeText(UpdateProfile.this, "Retrieve Failed !", Toast.LENGTH_SHORT).show();
                 progressDialog.dismiss();
 
