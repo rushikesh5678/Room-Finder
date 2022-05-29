@@ -17,7 +17,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class DetailedActivity extends AppCompatActivity {
-
     ImageView pgImage;
     TextView pgname,pgdescription,pgprice,pgaddress,pgadslink,pgphone;
     String adminid,adminphone,adminpg,adminname,adslinks;
