@@ -11,7 +11,6 @@ public class About_App extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_app);
-
         Toolbar toolbar = findViewById(R.id.toolBaraboutapp);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("About App");
