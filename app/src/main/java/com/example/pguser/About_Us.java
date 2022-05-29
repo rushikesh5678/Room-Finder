@@ -12,6 +12,7 @@ public class About_Us extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
 
+
         Toolbar toolbar =findViewById(R.id.aboutus_toolbar);
         toolbar.setTitle("About Developer");
         setSupportActionBar(toolbar);
