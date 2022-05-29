@@ -127,8 +127,8 @@ public class RegisterActivity extends AppCompatActivity {
 
                 // Email
                 if(TextUtils.isEmpty(userData.email)){
+                    Toast.makeText(RegisterActivity.this, "Please Enter Email  ", Toast.LENGTH_SHORT).show();
 
-                    Toast.makeText(RegisterActivity.this, "Please Enter Email ", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
                     return;
                 }
