@@ -36,6 +36,7 @@ public class BFlatFragment2 extends Fragment {
 
     private ValueEventListener eventListener;
 
+
     FirebaseDatabase database;
     DatabaseReference myRef;
     public BFlatFragment2() {
