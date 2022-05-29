@@ -140,6 +140,8 @@ public class RegisterActivity2 extends AppCompatActivity {
                 if(TextUtils.isEmpty(userData.pgname)){
 
                     Toast.makeText(RegisterActivity2.this, "Please Enter P.G Name ", Toast.LENGTH_SHORT).show();
+
+
                     progressDialog.dismiss();
                     return;
                 }
