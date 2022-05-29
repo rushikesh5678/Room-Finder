@@ -14,6 +14,7 @@ public class TermsConditions extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolBartermscondition);
         setSupportActionBar(toolbar);
+
         getSupportActionBar().setTitle("Terms & Conditions");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
