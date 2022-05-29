@@ -54,6 +54,7 @@ public class UpdateProfile2 extends AppCompatActivity {
 
         DatabaseReference databaseReference=firebaseDatabase.getReference().child("Admin").child(firebaseAuth.getCurrentUser().getUid()).child("Profile");
 
+
         progressDialog.show();
 
         databaseReference.addValueEventListener(new ValueEventListener() {
