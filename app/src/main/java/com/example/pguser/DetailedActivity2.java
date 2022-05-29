@@ -179,6 +179,9 @@ public class DetailedActivity2 extends AppCompatActivity {
 
                     String userid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
+
+
+
                     myRef=FirebaseDatabase.getInstance().getReference();
                     myRef.child("Admin").child(userid).child("City")
                             .child(city1).child(pgroom.getText().toString().substring(10)).child(pgname.getText().toString()).updateChildren(hm)
