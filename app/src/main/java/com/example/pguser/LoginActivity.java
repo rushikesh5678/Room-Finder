@@ -34,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
 
         btRegister  = findViewById(R.id.btRegister);
         tvForget = findViewById(R.id.tvForgot);
-
         firebaseAuth = FirebaseAuth.getInstance();
 
         login_email=(EditText)findViewById(R.id.txtloginemail);
