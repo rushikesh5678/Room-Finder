@@ -33,6 +33,7 @@ public class HomeFragment2 extends Fragment {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
+
     public HomeFragment2() {
         // Required empty public constructor
     }
