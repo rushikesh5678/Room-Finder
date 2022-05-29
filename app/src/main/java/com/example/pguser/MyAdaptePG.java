@@ -141,7 +141,6 @@ class PGViewHolder extends RecyclerView.ViewHolder{
 
     CardView pg_card;
     TextView pg_name, pg_price, pg_desc, pg_city, pg_occupancy,pg_for,pg_foodinclude,pg_ads,pg_adslink,pg_power,pg_wifi,pg_party,pg_parking,pg_tv,pg_clean,admin_name, admin_pgname, admin_phone, admin_key, pg_avail,pg_roomtype;
-
     ImageView pg_image;
 
     public PGViewHolder (View itemView){
