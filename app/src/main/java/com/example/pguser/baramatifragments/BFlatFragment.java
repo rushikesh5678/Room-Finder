@@ -32,6 +32,7 @@ public class BFlatFragment extends Fragment {
     RecyclerView mRecyclerView;
     List<PGData> pgData;
 
+
     ProgressDialog progressDialog;
 
     private ValueEventListener eventListener;
