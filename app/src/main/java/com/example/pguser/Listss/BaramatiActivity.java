@@ -34,7 +34,6 @@ public class BaramatiActivity extends AppCompatActivity implements BottomNavigat
 
     BottomNavigationView bnav;
     public static Context contextOfApplication;
-
     public static Context getContextOfApplication() {
         return contextOfApplication;
     }
