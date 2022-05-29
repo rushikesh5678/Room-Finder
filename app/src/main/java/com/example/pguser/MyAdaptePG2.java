@@ -26,6 +26,7 @@ public class MyAdaptePG2 extends RecyclerView.Adapter<PGViewHolder2> {
     public MyAdaptePG2(Context mContext, List<PGData2> myPGList) {
         this.mContext = mContext;
         this.myPGList = myPGList;
+
     }
 
     @NonNull
